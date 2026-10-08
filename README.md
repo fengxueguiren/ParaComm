@@ -2,7 +2,7 @@
 
 Rethinking What to Communicate for Collaborative Perception: A Parameter-Centric Perspective
 
-[Paper](https://doi.org/10.1109/TMC.2026.3741641) | [Project Page](https://weiquanmin.github.io/paracomm/)
+[Paper](https://doi.org/10.1109/TMC.2026.3741641) | [Project Page](https://weiquanmin.github.io/ParaComm/)
 
 ![ParaComm framework](images/Framework.png)
 
