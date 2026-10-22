@@ -4,8 +4,7 @@ Rethinking What to Communicate for Collaborative Perception: A Parameter-Centric
 
 [Paper](https://doi.org/10.1109/TMC.2026.3741641) | [Project Page](https://weiquanmin.github.io/ParaComm/)
 
-![ParaComm framework](images/Framework.png)
-
+https://github.com/user-attachments/assets/67579e22-2a6f-4db6-aee4-1a25ab9d80c2
 
 ## Highlights
 
@@ -13,6 +12,8 @@ Rethinking What to Communicate for Collaborative Perception: A Parameter-Centric
 - **Compact transmission:** Spatial and atom sparsification, parameter sharing, and low-bit quantization jointly reduce communication volume.
 - **Strong accuracy–communication trade-off:** On OPV2V, ParaComm achieves over **350× communication compression** while improving detection accuracy over standard full-feature collaboration.
 - **Broad validation:** Experiments on **OPV2V, V2XSet, and DAIR-V2X**, with multiple base collaborative perception models, demonstrate its effectiveness and generality.
+
+![ParaComm framework](images/Framework.png)
 
 ## Abstract
 Collaborative perception enhances autonomous driving by allowing agents to share complementary perceptual information. Existing methods typically adopt a Feature-Centric Communication (FCC) perspective that focuses on selecting or compressing feature representations for transmission. A shared representational basis offers an opportunity to reduce online communication by encoding observations through compact parameters. Building on this idea, we introduce a Parameter-Centric Communication (PCC) perspective, in which these parameters specify the composition of representational bases retained locally at each agent. We instantiate PCC as ParaComm, a learnable dictionary-driven framework for communication-efficient collaborative perception. In ParaComm, continuous parameters learned from BEV features specify how shared dictionary atoms are combined to form the current collaborative representation. To reduce transmission volume, ParaComm progressively sparsifies these parameters across spatial locations and dictionary atoms and further compacts them through parameter sharing and low-bit quantization. The receiver then explicitly reconstructs collaborative features using the transmitted parameters and its local copy of the shared dictionary. Extensive experiments on OPV2V, V2XSet, and DAIR-V2X validate the effectiveness and generality of ParaComm. On OPV2V, for example, it reduces the communication volume from 34.375 MB to 99.688 KB, corresponding to over 350× compression, while still improving detection accuracy relative to standard full-feature collaboration.
